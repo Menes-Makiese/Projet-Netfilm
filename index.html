@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+    <script type="module" src="movies.js" defer></script>
+    <script type="module" src="series.js" defer></script>
+    <title>Netfilm</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <div class="appTitle">
+                <h1>Netfilm</h1>
+            </div>
+        </a>
+
+        <div class="appSearch">
+            <form id="form">
+                <input type="text" id="search" class="search" placeholder="Search">
+            </form>
+        </div>
+    </header>
+
+    <div id="typedtext"></div>
+    <div id="categoryChoice">
+        <button id="movieBtn">Movies</button>
+        <button id="serieBtn">Series</button>
+    </div>
+
+    <div id="genreChoice">
+        <form action="" method="GET" class="genreMovie">
+            <label for="genresMovies">Choose a genre</label>
+            <select name="genres" id="genresMovies">
+                <option value="Action" class="">Action</option>
+                <option value="Adventure" class="">Adventure</option>
+                <option value="Drama" class="">Drama</option>
+                <option value="Comedie" class="">Comedie</option>
+            </select>
+        </form>
+        <form action="" method="GET" class="genreSerie">
+            <label for="genresSeries">Choose a genre</label>
+            <select name="genres" id="genresSeries">
+                <option value="Action" class="">Action</option>
+                <option value="Adventure" class="">Adventure</option>
+                <option value="Drama" class="">Drama</option>
+                <option value="Comedie" class="">Comedie</option>
+            </select>
+        </form>
+    </div>
+
+    <main id="main" class="hidden">
+        <div class="movie">
+            <img src="images/gr-stocks-q8P8YoR6erg-unsplash.jpg" alt="Images">
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="green">9.8</span>
+            </div>
+            <div class="overview">
+                <h3>Overview</h3>
+                demain des l'aube a l'heure ou blanchit la montagne , je partirai vois-tu je sais que tu
+                m'attend, j'irai par la foret , j'irai par la montagne, je ne puis demeurer loin de toi
+                plus longtemps , je sais que tu m'attend.
+            </div>
+        </div>
+        <div class="serie" class="hidden">
+            <img src="images/gr-stocks-q8P8YoR6erg-unsplash.jpg" alt="Images">
+            <div class="serie-info">
+                <h3>Serie Title</h3>
+                <span class="green">9.8</span>
+            </div>
+            <div class="overview">
+                <h3>Overview</h3>
+                demain des l'aube a l'heure ou blanchit la montagne , je partirai vois-tu je sais que tu
+                m'attend, j'irai par la foret , j'irai par la montagne, je ne puis demeurer loin de toi
+                plus longtemps , je sais que tu m'attend.
+            </div>
+        </div>
+        <div class="result" class="hidden">
+            <img src="images/gr-stocks-q8P8YoR6erg-unsplash.jpg" alt="Images">
+            <div class="result-info">
+                <h3>Result Title</h3>
+                <span class="green">9.8</span>
+            </div>
+            <div class="overview">
+                <h3>Overview</h3>
+                demain des l'aube a l'heure ou blanchit la montagne , je partirai vois-tu je sais que tu
+                m'attend, j'irai par la foret , j'irai par la montagne, je ne puis demeurer loin de toi
+                plus longtemps , je sais que tu m'attend.
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
